@@ -84,7 +84,7 @@ const steps = dom_diff(someA, someB)
 apply_diff(diffs)
 ```
 
-### Improving performance of apply_diff
+### Improving performance with skeduler
 You can imporeve performance of `apply_diff` with a skeduler.
 
 ``` jsx
@@ -93,7 +93,6 @@ import { skeduler } from 'sweet'
  apply_diff(diffs, skeduler).then(() => {
   /// Do something after it
  })
-
 
 ```
 
