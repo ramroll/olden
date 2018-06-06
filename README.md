@@ -23,25 +23,38 @@ sweet.ele depends transform-react-jsx
 }
 ```
 
-### use sweet to create dom element
+### Create dom element
 
 ``` jsx
 import {ele} from 'sweet'
 
+// tab is a virtual-dom element 
 const tab = <div data-click='go'>
   <h1>hello world!</h1>
 </div>
 
+tab.appendTo(document.body)
+
+// or delete all siblings of document.body
+tab.appendTo(document.body, true) 
+
+// or replace it
+tab.replaceTo(document.body)
+
+
+
 ```
 
-### use dom-diff algorithm to to improve performance
+### Improving performance by dom-diff algorithm 
 ``` jsx
-import {dom_diff, dom_apply} from 'sweet'
+import {dom_diff, dom_append, dom_apply} from 'sweet'
 
 // someA is a domNode
 const someA = <div data-click='go'>
   <h1>hello world!</h1>
 </div>
+
+dom_appender(someA.dom)
 
 // someB is a domNode
 const someB = <div data-click='go'>
@@ -67,6 +80,8 @@ const someA = <div data-click='go'>
   <h1>hello world!</h1>
 </div>
 
+dom_appender(someA.dom)
+
 // someB is a domNode
 const someB = <div data-click='go'>
   <h1>do it!</h1>
@@ -82,7 +97,7 @@ dom_update(someA, someB)
 ### let's make it data-driven
 ``` jsx
 
-import {ele, dom_update} from 'sweet'
+import {ele, dom_update, dom_append} from 'sweet'
 
 const tabPanel = ({
   tabs,
@@ -103,6 +118,8 @@ const tabs = {
   tabs : [ { title : 'Todo'}, {title : 'Done'} ]
 }
 const tabNode = tabPanel({tabs})
+
+dom_append(document.body, tabNode)
 
 // let's write a updator fundtion
 funtion changeSelection(selectedIndex){
