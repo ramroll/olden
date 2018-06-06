@@ -1,8 +1,13 @@
 ## Simple library To Translate jsx to dom
 
-Make your javascript program sweet ~ 
+Sweet are functions, sweets are simple. Sweeps gives not suggestions about how your programs should be written. Sweets are foolish. 
 
-Sweet doesn't translate jsx to dom , `babel-plugin-react-jsx` do it. Sweet create dom with jsx, and provide algorithms to maintian thoses things. Sweet are functions, you just need to import which you need.
+Sweets dont translate jsx to dom , the `babel-plugin-react-jsx` plugin do it. Sweets provide anything to mantain a virtual-dom. In the original design sweets canbe used as :
+
+- javascript template 
+- write javascrip frameworks like react/vue
+
+
 
 ### install
 
