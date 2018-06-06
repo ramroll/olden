@@ -82,6 +82,7 @@ const steps = dom_diff(someA, someB)
 
 // apply the steps
 apply_diff(diffs)
+```
 
 ### Improving performance of apply_diff
 You can imporeve performance of `apply_diff` with a skeduler.
