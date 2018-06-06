@@ -1,23 +1,22 @@
-## Simple library maintian virtual-dom
+## Old-fashion javascript virtual dom library
 
-Sweet are functions, sweets are simple. Sweeps gives no suggestions about how your programs should be written. Sweets are foolish. 
+Olden are functions, Oldens are simple. Oldens gives no suggestions about how your programs should be written. Oldens prefer very old programming architecture. 
 
-Sweets dont translate jsx to dom , the `babel-plugin-react-jsx` plugin do it. Sweets provide anything to mantain a virtual-dom. In the original design sweets are thought to be used as :
+Oldens cannot translate jsx to dom , the `babel-plugin-react-jsx` plugin do it.  
 
-- javascript template less than 1k
-- provide a high performance virtual-dom algorithm
-- write your own javascript framework 
-
+Why should I use Olden?
+- I need a javascript template less than 1k. 
+- You need a high performance virtual-dom algorithm.
 
 
 ### install
 
 ```
-yarn add sweet
+yarn add olden
 ```
 
 ### babel
-Sweet depends `transform-react-jsx` and `imports-transform`.
+Olden depends `transform-react-jsx` and `imports-transform`.
 
 ```
 yarn add -D babel-plugin-transform-react-jsx babel-plugin-imports-transform
@@ -33,7 +32,7 @@ And the `.babelrc` file:
       "pragma": "dom" // default pragma is React.createElement
     }],
     ['babel-plugin-imports-transform', {
-      'sweet'
+      'Olden'
     }]
   ]
 }
@@ -42,7 +41,7 @@ And the `.babelrc` file:
 ### Create dom element
 
 ``` jsx
-import {ele} from 'sweet'
+import {ele} from 'olden'
 
 // tab is a virtual-dom element 
 const tab = <div data-click='go'>
@@ -63,7 +62,7 @@ tab.replaceTo(document.body)
 
 ### Improving performance by dom-diff algorithm 
 ``` jsx
-import {dom_diff, apply_diff} from 'sweet'
+import {dom_diff, apply_diff} from 'olden'
 
 // someA is a domNode
 const someA = <div data-click='go'>
@@ -88,7 +87,7 @@ apply_diff(diffs)
 You can imporeve performance of `apply_diff` with a skeduler.
 
 ``` jsx
-import { skeduler } from 'sweet'
+import { skeduler } from 'olden'
 // A default skeduler witch update the diffs in a requestAnimationFrame cycle
  apply_diff(diffs, skeduler).then(() => {
   /// Do something after it
@@ -98,7 +97,7 @@ import { skeduler } from 'sweet'
 
 ### use dom_update function to do privous work
 ``` jsx
-import {dom_updator} from 'sweet'
+import {dom_updator} from 'olden'
 dom_update(someA, someB)
 
 // or simply
@@ -106,7 +105,7 @@ dom_update(someA, someB)
 // is injected when require dom_updator
 
 // some where in the bootstrap code once
-import {dom_updator} from 'sweet'
+import {dom_updator} from 'olden'
 
 someA.updateTo(someB) 
 
@@ -118,7 +117,7 @@ someA.updateTo(someB)
 ### Make it data-driven
 ``` jsx
 
-import {ele, dom_updator} from 'sweet'
+import {ele, dom_updator} from 'olden'
 
 // A pure functional tab panel component
 const __tabPanel = ({
