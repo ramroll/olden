@@ -1,6 +1,6 @@
 ## Simple library maintian virtual-dom
 
-Sweet are functions, sweets are simple. Sweeps gives not suggestions about how your programs should be written. Sweets are foolish. 
+Sweet are functions, sweets are simple. Sweeps gives no suggestions about how your programs should be written. Sweets are foolish. 
 
 Sweets dont translate jsx to dom , the `babel-plugin-react-jsx` plugin do it. Sweets provide anything to mantain a virtual-dom. In the original design sweets are thought to be used as :
 
