@@ -29,13 +29,14 @@ And the `.babelrc` file:
 {
   "plugins": [
     ["transform-react-jsx", {
-      "pragma": "dom" // default pragma is React.createElement
+      "pragma": "ele" 
     }],
-    ['babel-plugin-imports-transform', {
-      'Olden'
+    ["imports-transform", {
+      "olden" : {}
     }]
   ]
 }
+
 ```
 
 ### Create dom element

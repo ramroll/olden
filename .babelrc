@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    ["transform-react-jsx", {
+      "pragma": "ele" 
+    }],
+    ["babel-plugin-imports-transform", {
+      "olden" : {}
+    }]
+  ]
+}
