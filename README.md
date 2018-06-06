@@ -1,4 +1,4 @@
-## Simple library To Translate jsx to dom
+## Simple library maintian virtual-dom
 
 Sweet are functions, sweets are simple. Sweeps gives not suggestions about how your programs should be written. Sweets are foolish. 
 
