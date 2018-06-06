@@ -2,7 +2,7 @@
 
 Sweet are functions, sweets are simple. Sweeps gives not suggestions about how your programs should be written. Sweets are foolish. 
 
-Sweets dont translate jsx to dom , the `babel-plugin-react-jsx` plugin do it. Sweets provide anything to mantain a virtual-dom. In the original design sweets canbe used as :
+Sweets dont translate jsx to dom , the `babel-plugin-react-jsx` plugin do it. Sweets provide anything to mantain a virtual-dom. In the original design sweets are thought to be used as :
 
 - javascript template 
 - write javascrip frameworks like react/vue
